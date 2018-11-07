@@ -9,12 +9,12 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="load01" elementType="Argument">
             <stringProp name="Argument.name">load01</stringProp>
-            <stringProp name="Argument.value">${__P(load01,false)}</stringProp>
+            <stringProp name="Argument.value">${__P(load01,true)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="load02" elementType="Argument">
             <stringProp name="Argument.name">load02</stringProp>
-            <stringProp name="Argument.value">${__P(load02,false)}</stringProp>
+            <stringProp name="Argument.value">${__P(load02,true)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -36,7 +36,7 @@
       </ThreadGroup>
       <hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-          <stringProp name="IfController.condition">${__P(load01,false)}==true</stringProp>
+          <stringProp name="IfController.condition">${__P(load01,true)}==true</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
@@ -112,7 +112,7 @@
       </ThreadGroup>
       <hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-          <stringProp name="IfController.condition">${__P(load02,false)}==true</stringProp>
+          <stringProp name="IfController.condition">${__P(load02,true)}==true</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
